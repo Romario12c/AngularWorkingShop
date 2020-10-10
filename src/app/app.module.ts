@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartService } from './cart.service';
 
 
 
@@ -29,7 +30,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductAlertComponent,
     ProductDetailComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [CartService]
 })
 export class AppModule { }
 
